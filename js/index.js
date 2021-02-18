@@ -3,6 +3,17 @@ var elevateClick = document.getElementById("elevatorpitch");
 var intClick = document.getElementById("interviewdata");
 var persClick = document.getElementById("personas");
 
+window.onload = function(){ 
+    loadFunction();
+} /*Loads a default state with ideation article enabled. Otherwise it takes two clicks to change active article */
+
+function loadFunction() {
+    ideaClick.style.display = "inherit";
+    elevateClick.style.display = "none";
+    intClick.style.display = "none";
+    persClick.style.display = "none";
+}
+
 function ideationClick() {
 if (ideaClick.style.display === "none") {
     ideaClick.style.display = "inherit";
