@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/index.js"></script>
 
     <title>UX Falcon Blog</title>
 </head>
 <body>
     
     <div class="container">
+
         <div class="backgroundimagemain"></div>
+
         <nav class="index1">
             <ul class="topnav">
                 <li><a href="#ideationcreation" onclick="ideationClick()">Ideation</a></li>
@@ -19,11 +22,12 @@
                 <li><a href="#personas" onclick="personaClick()">Personas</a></li>
             </ul>
         </nav>
+
         <header class="titlehead index1">
             <h1>User eXperience Design </br>Semester 2<h1></h1>
         </header>
 
-        <article class="ideationcreation index1 topic">
+        <article id="ideationcreation" class="index1 topic">
             <div class="sectiontitle"><h2>Ideation using Padlet</br><h3><i>11/02/2021</i></h3></h2></div>
             <section class="left">
                 <p>As part of our ideation process, we utilised Padlet to brainstorm a series of different health issues.
@@ -33,25 +37,114 @@
                 </p>
             </section>
 
+            <section class="right">
+                <a href="https://padlet.com/cameron2tebbenhamsmall/qgr19zrhwp1iaz3b" target="_blank" class=""><img src="images/ideation.jpeg" class="centerimage" alt="A brainstorm spider diagram made in padlet concerning various health issues"></a>
+                <a href="https://padlet.com/cameron2tebbenhamsmall/qgr19zrhwp1iaz3b">Padlet Brainstorming</a>
+            </section>
+        </article>
+
+        <article id="elevatorpitch" class="index1 topic">
+            <div class="sectiontitle"><h2>Elevator Pitches</br><h3><i>11/02/2021</i></h3></h2></div>
+            <section class="left">
+                <h3>Pitch One - Sleep</h3>
+                <p>
+                </p>
+            </section>
+            <section class="right">
+                <h3>Pitch Two - Exercise</h3>
+                <p>
+                </p>
+            </section>
+        </article>
+
+        <article id="interviewdata" class="index1 topic">
+            <div class="sectiontitle"><h2>Interview Data</br><h3><i>11/02/2021</i></h3></h2></div>
+            <section class="left">
+                <p>As part of our ideation process, we utilised Padlet to brainstorm a series of different health issues.
+                    <br><br>Though we had a few ideas we knew we wanted to explore further, brainstorming as many issues that we could think of would keep our horizons open.
+                    <br><br>After we established common issues, we then expanded on each issue with a few different methods for how one might track said issue.
+                    <br><br>For example, if one were to choose Diet as the main issue to bring forward and develop, one may wish to track fluid intake, calories consumed, blood pressure and so forth.
+                </p>
+            </section>
             <section class="right index1">
                 <a href="https://padlet.com/cameron2tebbenhamsmall/qgr19zrhwp1iaz3b" target="_blank" class=""><img src="images/ideation.jpeg" class="centerimage" alt="A brainstorm spider diagram made in padlet concerning various health issues"></a>
                 <a href="https://padlet.com/cameron2tebbenhamsmall/qgr19zrhwp1iaz3b">Padlet Brainstorming</a>
             </section>
         </article>
-        <!--<article class="elevatorpitch index1 topic">
-            <p>Lorem ipsum</p>
+
+        <article id="personas" class="index1 topic">
+            <div class="sectiontitle"><h2>Persona Creation</br><h3><i>11/02/2021</i></h3></h2></div>
+            <section class="left">
+                <p>As part of our ideation process, we utilised Padlet to brainstorm a series of different health issues.
+                    <br><br>Though we had a few ideas we knew we wanted to explore further, brainstorming as many issues that we could think of would keep our horizons open.
+                    <br><br>After we established common issues, we then expanded on each issue with a few different methods for how one might track said issue.
+                    <br><br>For example, if one were to choose Diet as the main issue to bring forward and develop, one may wish to track fluid intake, calories consumed, blood pressure and so forth.
+                </p>
+            </section>
+            <section class="right index1">
+                <a href="https://padlet.com/cameron2tebbenhamsmall/qgr19zrhwp1iaz3b" target="_blank" class=""><img src="images/ideation.jpeg" class="centerimage" alt="A brainstorm spider diagram made in padlet concerning various health issues"></a>
+                <a href="https://padlet.com/cameron2tebbenhamsmall/qgr19zrhwp1iaz3b">Padlet Brainstorming</a>
+            </section>
         </article>
-        <article class="interviewdata index1 topic">
-            <p>Lorem ipsum</p>
-        </article>
-        <article class="personas index1 topic">
-            <p>Lorem ipsum</p>
-        </article>-->
 
         <footer>
 
         </footer>
     </div>
-    <script src="javascript" href="js/index.js"></script>
+
+    <script>
+        var ideaClick = document.getElementById("ideationcreation");
+        var elevateClick = document.getElementById("elevatorpitch");
+        var intClick = document.getElementById("interviewdata");
+        var persClick = document.getElementById("personas");
+
+        function ideationClick() {
+        if (ideaClick.style.display === "none") {
+            ideaClick.style.display = "inherit";
+            elevateClick.style.display = "none";
+            intClick.style.display = "none";
+            persClick.style.display = "none";
+        } else {
+            ideaClick.style.display = "none";
+        }
+        }
+
+        function elevatorClick() {
+        if (elevateClick.style.display === "none") {
+            ideaClick.style.display = "none";
+            elevateClick.style.display = "inherit";
+            intClick.style.display = "none";
+            persClick.style.display = "none";
+        } else {
+            elevateClick.style.display = "none";
+        }
+        }
+
+        function interviewClick() {
+        if (intClick.style.display === "none") {
+            ideaClick.style.display = "none";
+            elevateClick.style.display = "none";
+            intClick.style.display = "inherit";
+            persClick.style.display = "none";
+        } else {
+            intClick.style.display = "none";
+        }
+        }
+
+        function personaClick() {
+        if (persClick.style.display === "none") {
+            ideaClick.style.display = "none";
+            elevateClick.style.display = "none";
+            intClick.style.display = "none";
+            persClick.style.display = "inherit";
+        } else {
+            persClick.style.display = "none";
+        }
+        }
+
+
+
+
+    </script>
 </body>
 </html>

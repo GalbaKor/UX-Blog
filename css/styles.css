@@ -115,13 +115,20 @@ nav {
     padding: 10px;
     text-align: center;
 }
+.left a{
+    color: red;
+}
+.left a:hover{
+    color: darkred;
+}
 .right {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin: 5px;
+    padding: 10px;
     text-align: center;
-    color: red;
 }
 .right a{
     color: red;
@@ -137,3 +144,16 @@ nav {
     text-align: center;    
 }
 
+
+#ideationcreation {
+    display:inherit;
+}
+#elevatorpitch {
+    display:none;
+}
+#interviewdata {
+    display:none;
+}
+#personas {
+    display:none;
+}
