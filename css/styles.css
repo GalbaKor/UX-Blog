@@ -2,16 +2,22 @@ body {
     margin: 0 0 0 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.15rem;
-    align-self: center;
+    align-self: center; 
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */ 
+}
+body::-webkit-scrollbar { /* Chrome, Safari, Opera */
+    display:none;
 }
 
 .backgroundimagemain {
-    background-image: url(../images/UXimage.jpeg);
+    /*background-image: url(../images/UXimage.jpeg);*/
+    background-image: url(../images/workspace.jpg);
     background-repeat: repeat;
     background-position: center;
-    background-size: 100%;
-    opacity: 1;
-    position: absolute;
+    background-size:cover;
+    opacity: .75;
+    position:fixed;
     top: 0px;
     right: 0px;
     bottom: 0px;
