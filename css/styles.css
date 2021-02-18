@@ -48,15 +48,16 @@ nav {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    
+    background-color: white;
 }
 .topnav li {
     float: left;
-    padding: 20px 20px;
-    
 }
 .topnav li a{
     color: red;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
 }
 .topnav li a:hover{
     color: darkred;
@@ -95,12 +96,12 @@ nav {
     align-items: center;
 }
 
-.center {
+.centerimage {
     justify-self: center;
     max-width: 100%;
     transition: .3s ease-in-out;
 }
-.center:hover{
+.centerimage:hover{
     -webkit-transform: scale(.9);
     -ms-transform: scale(.9);
     transform: scale(.9);
