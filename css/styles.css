@@ -1,0 +1,138 @@
+body {
+    margin: 0 0 0 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.15rem;
+    align-self: center;
+}
+
+.backgroundimagemain {
+    background-image: url(../images/UXimage.jpeg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 100%;
+    opacity: 1;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr .5fr 3fr;
+}
+
+.index1 {
+    z-index: 1;
+}
+.index2 {
+    z-index: 2;
+}
+nav {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid red;
+    border-radius: 10px;
+    background-color: white;
+}
+.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+.topnav li {
+    float: left;
+    padding: 20px 20px;
+    
+}
+.topnav li a{
+    color: red;
+}
+.topnav li a:hover{
+    color: darkred;
+}
+
+
+.titlehead {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    justify-self: center;
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.topic {
+    grid-column-start: 4;
+    grid-column-end: 10;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid red;
+    border-radius: 30px;
+    background-color: white;
+
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    justify-self: center;
+    max-width: 100%;
+    transition: .3s ease-in-out;
+}
+.center:hover{
+    -webkit-transform: scale(.9);
+    -ms-transform: scale(.9);
+    transform: scale(.9);
+}
+.left {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 5px;
+    padding: 10px;
+    text-align: center;
+}
+.right {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+    color: red;
+}
+.right a{
+    color: red;
+}
+.right a:hover{
+    color: darkred;
+}
+.sectiontitle{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;    
+}
+
