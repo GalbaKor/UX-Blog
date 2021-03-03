@@ -163,3 +163,9 @@ nav {
 #personas {
     display:none;
 }
+
+
+.rightnav {
+    list-style: none;
+    overflow: hidden;
+}
