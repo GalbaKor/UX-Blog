@@ -169,3 +169,6 @@ nav {
     list-style: none;
     overflow: hidden;
 }
+.rightnav li{
+    float: left;
+}
