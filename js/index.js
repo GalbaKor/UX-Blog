@@ -2,6 +2,7 @@ var ideaClick = document.getElementById("ideationcreation");
 var elevateClick = document.getElementById("elevatorpitch");
 var intClick = document.getElementById("interviewdata");
 var persClick = document.getElementById("personas");
+
 var int1 = document.getElementById("interview1");
 var int2 = document.getElementById("interview2");
 var int3 = document.getElementById("interview3");
