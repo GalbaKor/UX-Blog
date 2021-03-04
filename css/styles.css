@@ -85,8 +85,8 @@ nav {
 }
 
 .topic {
-    grid-column-start: 4;
-    grid-column-end: 10;
+    grid-column-start: 3;
+    grid-column-end: 11;
     grid-row-start: 3;
     grid-row-end: 4;
     padding: 10px;
@@ -166,9 +166,39 @@ nav {
 
 
 .rightnav {
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     overflow: hidden;
+    background-color: white;
 }
-.rightnav li{
+.rightnav li {
     float: left;
 }
+.rightnav li a{
+    color: red;
+    text-decoration: none;
+    display: block;
+    padding: 20px 20px;
+}
+.rightnav li a:hover{
+    color: darkred;
+}
+.centraltable{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.questiontable{
+    width: 100%;
+    table-layout:fixed;
+}
+td, th {
+    border: 1px solid red;
+    text-align: left;
+    padding: 8px;
+    display:table-cell;
+    width: 25%;
+  }
+  tr:nth-child(even) {
+    background-color: rgba(255, 0, 0, 0.5);
+  }
