@@ -2,6 +2,8 @@ var ideaClick = document.getElementById("ideationcreation");
 var elevateClick = document.getElementById("elevatorpitch");
 var intClick = document.getElementById("interviewdata");
 var persClick = document.getElementById("personas");
+var journeymapClick = document.getElementById("userjourneymap");
+var competitorSWOTClick = document.getElementById("competitorSWOT");
 
 var int1 = document.getElementById("interview1");
 var int2 = document.getElementById("interview2");
@@ -18,11 +20,8 @@ function loadFunction() {
     elevateClick.style.display = "none";
     intClick.style.display = "none";
     persClick.style.display = "none";
-
-    int1.style.display = "inherit";
-    int2.style.display = "none";
-    int3.style.display = "none";
-    int4.style.display = "none";
+    journeymapClick.style.display = "none";
+    competitorSWOT.style.display ="none";
 }
 
 function ideationClick() {
@@ -31,6 +30,8 @@ if (ideaClick.style.display = "none") {
     elevateClick.style.display = "none";
     intClick.style.display = "none";
     persClick.style.display = "none";
+    journeymapClick.style.display = "none";
+    competitorSWOT.style.display ="none";
 } else {
     ideaClick.style.display = "none";
 }
@@ -42,6 +43,8 @@ if (elevateClick.style.display = "none") {
     elevateClick.style.display = "inherit";
     intClick.style.display = "none";
     persClick.style.display = "none";
+    journeymapClick.style.display = "none";
+    competitorSWOT.style.display ="none";
 } else {
     elevateClick.style.display = "none";
 }
@@ -53,6 +56,8 @@ if (intClick.style.display = "none") {
     elevateClick.style.display = "none";
     intClick.style.display = "inherit";
     persClick.style.display = "none";
+    journeymapClick.style.display = "none";
+    competitorSWOT.style.display ="none";
 } else {
     intClick.style.display = "none";
 }
@@ -64,47 +69,35 @@ if (persClick.style.display = "none") {
     elevateClick.style.display = "none";
     intClick.style.display = "none";
     persClick.style.display = "inherit";
+    journeymapClick.style.display = "none";
+    competitorSWOT.style.display ="none";
 } else {
     persClick.style.display = "none";
 }
 }
 
-function interview1click() {
-    if (int1.style.display = "inherit") {
-        int2.style.display = "none";
-        int3.style.display = "none";
-        int4.style.display = "none";
+function mapClick() {
+    if (persClick.style.display = "none") {
+        ideaClick.style.display = "none";
+        elevateClick.style.display = "none";
+        intClick.style.display = "none";
+        persClick.style.display = "none";
+        journeymapClick.style.display = "inherit";
+        competitorSWOT.style.display ="none";
     } else {
-        int1.style.display = "none";
-}
-}
+        persClick.style.display = "none";
+    }
+    }
 
-function interview2click() {
-    if (int1.style.display = "none") {
-        int2.style.display = "inherit";
-        int3.style.display = "none";
-        int4.style.display = "none";
-    } else {
-        int2.style.display = "none";
-}
-}
-
-function interview3click() {
-    if (int1.style.display = "none") {
-        int2.style.display = "none";
-        int3.style.display = "inherit";
-        int4.style.display = "none";
-    } else {
-        int3.style.display = "none";
-}
-}
-
-function interview4click() {
-    if (int1.style.display = "none") {
-        int2.style.display = "none";
-        int3.style.display = "none";
-        int4.style.display = "inherit";
-    } else {
-        int4.style.display = "none";
+    function SWOTClick() {
+if (persClick.style.display = "none") {
+    ideaClick.style.display = "none";
+    elevateClick.style.display = "none";
+    intClick.style.display = "none";
+    persClick.style.display = "none";
+    journeymapClick.style.display = "none";
+    competitorSWOT.style.display ="inherit";
+} else {
+    persClick.style.display = "none";
 }
 }
